@@ -5,6 +5,7 @@ class Todo extends React.Component {
         super(props); 
         this.state ={ item: props.item }; // 매개변수 item 의 변수/값을 item에 대입
  } 
+ 
  render(){ 
     return (
         <div className="Todo">
