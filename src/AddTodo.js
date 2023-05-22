@@ -5,9 +5,8 @@ class AddTodo extends React.Component {
     constructor(props){ 
         super(props); 
         this.state ={item: {title:""}}; 
-        this.add = props.add; // props의 함수를 this.add에 연결, props에는 상위 컴포넌트(App.js)의 함수, 매개변수가 들어 있음.
+        this.add = props.add; // 매개변수 item 의 변수/값을 item에 대입
     } 
-    
     onInputChange =(e)=>{ 
         const thisItem =this.state.item; 
         thisItem.title = e.target.value; 
